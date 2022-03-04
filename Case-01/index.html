@@ -76,7 +76,112 @@
 
 <script src="assets/jQuery/jquery-3.6.0.min.js"></script>
 <script>
+    var tId;
+    var divOne = $("#firstDiv");
+    var divTwo = $("#secondDiv");
+    var divThree = $("#thirdDiv");
+    var divFour = $("#fourthDiv");
+    var divFive = $("#fifthDiv");
 
+    tId = setInterval(setStart,120);
+
+    function col1(div){
+        div.css('box-shadow: ',"#6D6D6D");
+    }
+    function col2(div){
+        div.css('backgroundColor',"#B6B6B6");
+    }
+    function col3(div){
+        div.css('backgroundColor','#DADADA')
+    }
+
+    var movement = 0;
+    function setStart(){
+        if(movement == 0){
+            divOne.css('opacity','100%')
+            divTwo.css('opacity','100%')
+            divThree.css('opacity','50%')
+            divFour.css('opacity','50%')
+            divFive.css('opacity','50%')
+            col1(divTwo);
+            col3(divOne);
+            movement++;
+        }else if(movement == 1){
+            divOne.css('opacity','100%')
+            divTwo.css('opacity','100%')
+            divThree.css('opacity','100%')
+            divFour.css('opacity','50%')
+            divFive.css('opacity','50%')
+            col1(divOne);
+            col2(divThree);
+            col3(divTwo);
+            movement++;
+        }else if(movement == 2){
+            divOne.css('opacity','50%')
+            divTwo.css('opacity','100%')
+            divThree.css('opacity','100%')
+            divFour.css('opacity','100%')
+            divFive.css('opacity','50%')
+            col1(divTwo);
+            col2(divFour);
+            col3(divThree);
+            movement++;
+        }
+        else if(movement == 3){
+            divOne.css('opacity','50%')
+            divTwo.css('opacity','50%')
+            divThree.css('opacity','100%')
+            divFour.css('opacity','100%')
+            divFive.css('opacity','100%')
+            col1(divThree);
+            col2(divFive);
+            col3(divFour);
+            movement++;
+        }
+        else if(movement == 4){
+            divOne.css('opacity','50%')
+            divTwo.css('opacity','50%')
+            divThree.css('opacity','50%')
+            divFour.css('opacity','100%')
+            divFive.css('opacity','100%')
+            col1(divFour);
+            col3(divFive);
+            movement++;
+        }
+        else if(movement == 5){
+            divOne.css('opacity','50%')
+            divTwo.css('opacity','50%')
+            divThree.css('opacity','100%')
+            divFour.css('opacity','100%')
+            divFive.css('opacity','100%')
+            col1(divThree);
+            col2(divFive);
+            col3(divFour);
+            movement++;
+        }
+        else if(movement == 6){
+            divOne.css('opacity','50%')
+            divTwo.css('opacity','100%')
+            divThree.css('opacity','100%')
+            divFour.css('opacity','100%')
+            divFive.css('opacity','50%')
+            col1(divTwo);
+            col2(divFour);
+            col3(divThree);
+            movement++;
+        }
+        else if(movement == 7){
+            divOne.css('opacity','100%')
+            divTwo.css('opacity','100%')
+            divThree.css('opacity','100%')
+            divFour.css('opacity','50%')
+            divFive.css('opacity','50%')
+            col1(divOne);
+            col2(divTwo);
+            col3(divThree);
+            movement=0;
+        }
+    };
 </script>
 </body>
 </html>

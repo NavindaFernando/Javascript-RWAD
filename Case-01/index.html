@@ -3,14 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <title>Kitt Animation</title>
+    <link rel="stylesheet" href="assets/normalize/normalize.css">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <style>
+
+        #car{
+            position: relative;
+            width: 100vw;
+            height: 100vh;
+        }
+
+        body>main>div:nth-child(4) {
+            position: absolute;
+            width: 25%;
+            height: 2%;
+            top: 65%;
+            left: 0;
+            right: 0%;
+            margin: auto;
+            display: flex;
+            flex-direction: row;
+            row-span: revert;
+        }
+
+        #firstDiv{
+            background-color: #f9fafb;
+            box-shadow: 2px 2px 70px 5px #f9fafb;
+        }
+
+        #secondDiv{
+            background-color: #f9fafb;
+            box-shadow: 2px 2px 70px 5px #f9fafb;
+        }
+
+        #thirdDiv{
+            background-color: #f9fafb;
+            box-shadow: 2px 2px 70px 5px #f9fafb;
+        }
+
+        #fourthDiv{
+            background-color: #f9fafb;
+            box-shadow: 2px 2px 70px 5px #f9fafb;
+        }
+
+        #fifthDiv{
+            background-color: #f9fafb;
+            box-shadow: 2px 2px 70px 5px #f9fafb;
+        }
+
+        body>main>div:nth-child(4) div {
+            position: relative;
+            width: calc(100%/5);
+            /*border: 1px solid white;*/
+            /*margin-left: 2%;*/
+        }
 
     </style>
 </head>
 <body>
-<main style="background-color: black;position: relative;width: 100%;height: 100vh;">
-    <h1 style="color: rgb(204, 101, 101);left: 0;right: 0;top: -40%;bottom: 0;margin: auto;width: max-content;height: max-content;"
-        class="position-absolute">Javascript Knight Rider</h1>
+<main>
+    <img id="car" src="assets/image/tesla%20car.png" alt="">
     <div></div>
     <div></div>
     <div class=".container">
@@ -20,13 +72,8 @@
         <div id="fourthDiv"></div>
         <div id="fifthDiv"></div>
     </div>
-
-    <!-- <div class="btnContainer">
-        <button class="btn-success" id="startBtn">Start</button>
-        <button class="btn-danger" id="stopBtn">Stop</button>
-    </div> -->
-    <audio id="audioElement" src="assets/audio/kitt scanner.mp3"></audio>
 </main>
+
 <script src="assets/jQuery/jquery-3.6.0.min.js"></script>
 <script>
 

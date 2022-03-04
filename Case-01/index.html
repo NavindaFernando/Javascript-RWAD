@@ -85,7 +85,7 @@
         #btnOne{
             position: absolute;
             top: 50%;
-            right: 88%;
+            right: 90%;
             bottom: 0;
             margin: auto;
         }
@@ -93,7 +93,23 @@
         #btnTwo{
             position: absolute;
             top: 50%;
-            left: 88%;
+            left: 90%;
+            bottom: 0;
+            margin: auto;
+        }
+
+        #btnTop{
+            position: absolute;
+            top: 50%;
+            right: 85%;
+            bottom: 0;
+            margin: auto;
+        }
+
+        #btnBottom{
+            position: absolute;
+            top: 50%;
+            left: 85%;
             bottom: 0;
             margin: auto;
         }
@@ -112,12 +128,20 @@
         <div id="fourthDiv"></div>
         <div id="fifthDiv"></div>
     </div>
+
     <div id="btnOne">
         <button id="lightOff" type="button" class="btn btn-outline-secondary">Light Off</button>
     </div>
     <div id="btnTwo">
         <button id="lightOn" type="button" class="btn btn-outline-secondary">Light On</button>
     </div>
+    <div id="btnTop">
+        <button id="stop" type="button" class="btn btn-outline-secondary">Stop</button>
+    </div>
+    <div id="btnBottom">
+        <button id="start" type="button" class="btn btn-outline-secondary">Start</button>
+    </div>
+
 </main>
 
 <script src="assets/jQuery/jquery-3.6.0.min.js"></script>
@@ -243,6 +267,13 @@
         $("#rightSignalLight").css('box-shadow','');
     });
 
+    $("#start").click(function () {
+        movement = 0;
+    });
+
+    $("#stop").click(function () {
+        movement = 8;
+    });
 
 </script>
 </body>

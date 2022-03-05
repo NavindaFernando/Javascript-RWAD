@@ -9,3 +9,16 @@ javascript cases in rwad
 <h5 align="center">
 case 01
 </h5>
+
+
+
+
+***
+
+<h6 align="center">
+dev environment
+</h6>
+
+<div align="center">
+  <img height="20" src = "https://img.shields.io/badge/Intellij idea-white.svg?">
+</div>

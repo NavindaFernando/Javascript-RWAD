@@ -10,8 +10,7 @@ javascript cases in rwad
 case 01
 </h5>
 
-
-
+https://user-images.githubusercontent.com/86073690/156912751-1003947b-67bb-420e-b2cd-6dce865598fd.mp4
 
 ***
 

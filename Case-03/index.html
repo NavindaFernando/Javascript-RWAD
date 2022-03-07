@@ -73,6 +73,7 @@
             font-size: 30px;
             font-weight: bold;
         }
+
     </style>
 </head>
 <body>
@@ -96,7 +97,31 @@
 
 <script src="../Case-01/assets/jQuery/jquery-3.6.0.min.js"></script>
 <script>
+    const car = ["A", "B", "C"];
 
+    setInterval(ride, 500)
+
+    function ride() {
+        var i = 0;
+        var top = car[i];
+
+        while (i < car.length) {
+
+            if (i == 2) {
+                car[i] = top;
+
+            } else {
+                car[i] = car[i + 1];
+            }
+            i++;
+        }
+        var count = 0;
+        $('#one').text(car[count++]);  //0
+        $('#two').text(car[count++]);  //1
+        $('#three').text(car[count++]); //2
+
+
+    }
 </script>
 </body>
 </html>

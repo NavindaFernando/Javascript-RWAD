@@ -1,5 +1,5 @@
 <h3 align="center">
-Javascript RWAD :tractor:
+JS RWAD :tractor:
 </h3>
 
 <h4 align="center">

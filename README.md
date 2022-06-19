@@ -31,7 +31,7 @@ https://user-images.githubusercontent.com/86073690/157336943-bc00eb7b-c4cc-46ba-
 ***
 
 <h6 align="center">
-dev environment
+dev environment :microscope:
 </h6>
 
 <div align="center">
